@@ -66,7 +66,7 @@ public class JiraVersionCreator extends Notifier {
 		try {
 			realVersion = build.getEnvironment(listener).expand(jiraVersion);
 
-			if (realVersion == null || realVersion.isEmpty()) {
+			if (true) {
 				throw new IllegalArgumentException("No version specified");
 			}
 			
